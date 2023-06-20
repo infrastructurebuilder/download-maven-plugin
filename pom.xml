@@ -9,10 +9,13 @@
     </parent>
 
     <!-- Build description -->
+    <!--
     <groupId>com.googlecode.maven-download-plugin</groupId>
+    -->
+    <groupId>org.infrastructurebuilder.usurped</groupId>
     <artifactId>download-maven-plugin</artifactId>
     <packaging>maven-plugin</packaging>
-    <version>1.7.1-SNAPSHOT</version>
+    <version>1.7.0.0-SNAPSHOT</version>
 
     <name>Download Plugin for Maven</name>
 

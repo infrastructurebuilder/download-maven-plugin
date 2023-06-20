@@ -1,3 +1,19 @@
+# Usurped
+
+Usurped by Infrastructurebuilder to extract components
+
+For whatever reason, the developers decided to migrate away from
+components added to the Mojo and towards just sticking all the
+code into the mojo itself.  In our opinion, this is sort of a
+rookie mistake.  But w're not them.  We don't know their pain.
+And it doesn't matter.  We're happy to harvest what
+goodness they provide for IB's purposes.
+
+Original README below the break
+
+---
+
+
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.googlecode.maven-download-plugin/download-maven-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.googlecode.maven-download-plugin/download-maven-plugin) [![Build Status](https://app.travis-ci.com/maven-download-plugin/maven-download-plugin.svg?branch=master)](https://app.travis-ci.com/maven-download-plugin/maven-download-plugin)
 
 # Download Plugin for Maven
@@ -84,12 +100,12 @@ Until version 1.1, the plugin artifactId used to be _maven-download-plugin_, how
 
 ### Maven help
 
-To get basic plugin help, type in the command : 
+To get basic plugin help, type in the command :
 ```
 mvn com.googlecode.maven-download-plugin:download-maven-plugin:help
 ```
 
-To get a more detailed help, type command : 
+To get a more detailed help, type command :
 ```
 mvn com.googlecode.maven-download-plugin:download-maven-plugin:help -Ddetail
 ```
@@ -108,7 +124,7 @@ Are maintained at GitHub (links above).
 ### Contribute
 
 This project support GitHub PR, but enforce some rules for decent tracking: 1 Change Request == 1 PR == 1 commit, if a change can be made by iterations, then use a specific PR for each iteration.
-Ideally, every bugfix should be supplied with a unit or integration test. 
+Ideally, every bugfix should be supplied with a unit or integration test.
 
 ## Other links
 
