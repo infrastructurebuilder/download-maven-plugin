@@ -1,4 +1,5 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
     <modelVersion>4.0.0</modelVersion>
 
@@ -9,7 +10,7 @@
     <groupId>org.infrastructurebuilder.usurped</groupId>
     <artifactId>download-maven-plugin</artifactId>
     <packaging>maven-plugin</packaging>
-    <version>1.7.1.0</version>
+    <version>1.7.1.0-SNAPSHOT</version>
 
     <name>Download Plugin for Maven</name>
 
@@ -84,8 +85,7 @@
         <connection>scm:git:git://github.com/maven-download-plugin/maven-download-plugin.git</connection>
         <developerConnection>scm:git:ssh://git@github.com/maven-download-plugin/maven-download-plugin.git</developerConnection>
         <url>https://github.com/maven-download-plugin/maven-download-plugin</url>
-      <tag>download-maven-plugin-1.7.1.0</tag>
-  </scm>
+    </scm>
 
     <!-- Maven 3.2.5 or later is required due to the dependency on Plexus/Sisu -->
     <prerequisites>
@@ -187,7 +187,7 @@
                                 <localRepo>
                                     <source>${project.build.directory}/local-repo</source>
                                 </localRepo>
-                                <proxyRepo />
+                                <proxyRepo/>
                             </repositories>
                         </configuration>
                     </plugin>
@@ -218,7 +218,7 @@
                                 <localRepo>
                                     <source>${project.build.directory}/local-repo</source>
                                 </localRepo>
-                                <proxyRepo />
+                                <proxyRepo/>
                             </repositories>
                         </configuration>
                     </plugin>
