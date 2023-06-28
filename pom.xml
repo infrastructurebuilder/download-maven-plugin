@@ -91,6 +91,14 @@
     </distributionManagement>
 
    <properties>
+		<scmpublish.content>target/staging/${project.artifactId}</scmpublish.content>
+		<gpg.signing.profiles>release,IBgpgsigning</gpg.signing.profiles>
+		<maven.gpg.plugin.version>3.0.1</maven.gpg.plugin.version>
+		<maven.release.plugin.version>3.0.0-M4</maven.release.plugin.version>
+		<maven.nexus.staging.plugin.version>1.6.8</maven.nexus.staging.plugin.version>
+		<maven.release.plugin.version>3.0.0-M4</maven.release.plugin.version>
+		<maven.nexus.staging.plugin.skipStaging>false</maven.nexus.staging.plugin.skipStaging>
+
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.build.resourceEncoding>UTF-8</project.build.resourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
