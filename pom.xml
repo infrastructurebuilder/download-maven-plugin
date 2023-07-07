@@ -18,9 +18,7 @@
     @formatter:on
 
 -->
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
 	<parent>
@@ -33,7 +31,7 @@
 	<!-- <groupId>com.googlecode.maven-download-plugin</groupId> -->
 	<groupId>org.infrastructurebuilder.usurped</groupId>
 	<artifactId>download-maven-plugin</artifactId>
-	<version>1.7.1.1-SNAPSHOT</version>
+	<version>1.7.1.1</version>
 	<packaging>maven-plugin</packaging>
 
 	<name>Download Plugin for Maven</name>
@@ -86,7 +84,7 @@
 		<connection>scm:git:${git.url}</connection>
 		<developerConnection>scm:git:${git.url}</developerConnection>
 		<url>scm:git:${git.url}</url>
-		<tag>HEAD</tag>
+		<tag>download-maven-plugin-1.7.1.1</tag>
 	</scm>
 	<issueManagement>
 		<system>GitHub</system>
