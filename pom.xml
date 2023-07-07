@@ -267,7 +267,7 @@
                 <configuration>
                     <!-- During release:perform, enable the "release" profile -->
                     <releaseProfiles>release</releaseProfiles>
-                    <goals>deploy site:site site:deploy</goals>
+                    <goals>deploy</goals>
                 </configuration>
             </plugin>
         </plugins>
