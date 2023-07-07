@@ -8,7 +8,7 @@
     -->
    <groupId>org.infrastructurebuilder.usurped</groupId>
    <artifactId>download-maven-plugin</artifactId>
-   <version>1.7.1.1-SNAPSHOT</version>
+   <version>1.7.1.0-SNAPSHOT</version>
    <packaging>maven-plugin</packaging>
 
    <name>Download Plugin for Maven</name>
@@ -411,7 +411,7 @@
                                 <localRepo>
                                     <source>${project.build.directory}/local-repo</source>
                                 </localRepo>
-                                <proxyRepo />
+                                <proxyRepo/>
                             </repositories>
                         </configuration>
                     </plugin>
@@ -442,7 +442,7 @@
                                 <localRepo>
                                     <source>${project.build.directory}/local-repo</source>
                                 </localRepo>
-                                <proxyRepo />
+                                <proxyRepo/>
                             </repositories>
                         </configuration>
                     </plugin>
