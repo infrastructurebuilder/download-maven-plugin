@@ -31,7 +31,7 @@
 	<!-- <groupId>com.googlecode.maven-download-plugin</groupId> -->
 	<groupId>org.infrastructurebuilder.usurped</groupId>
 	<artifactId>download-maven-plugin</artifactId>
-	<version>1.7.1.1</version>
+	<version>1.7.1.2-SNAPSHOT</version>
 	<packaging>maven-plugin</packaging>
 
 	<name>Download Plugin for Maven</name>
@@ -84,7 +84,7 @@
 		<connection>scm:git:${git.url}</connection>
 		<developerConnection>scm:git:${git.url}</developerConnection>
 		<url>scm:git:${git.url}</url>
-		<tag>download-maven-plugin-1.7.1.1</tag>
+		<tag>HEAD</tag>
 	</scm>
 	<issueManagement>
 		<system>GitHub</system>
