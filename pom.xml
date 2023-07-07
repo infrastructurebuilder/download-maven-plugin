@@ -84,10 +84,6 @@
             <name>Sonatype Nexus Snapshots</name>
             <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
         </snapshotRepository>
-        <site>
-            <id>maven-download-plugin</id>
-            <url>scm:git:ssh://git@github.com/maven-download-plugin/maven-download-plugin.git</url>
-        </site>
     </distributionManagement>
 
    <properties>
