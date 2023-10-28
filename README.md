@@ -5,7 +5,7 @@ Usurped by Infrastructurebuilder to extract components
 For whatever reason, the developers decided to migrate away from
 components added to the Mojo and towards just sticking all the
 code into the mojo itself.  In our opinion, this is sort of a
-rookie mistake.  But w're not them.  We don't know their pain.
+rookie mistake.  But we're not them.  We don't know their pain.
 And it doesn't matter.  We're happy to harvest what
 goodness they provide for IB's purposes.
 
@@ -30,14 +30,14 @@ This Maven plugin should be available on Maven Central. But in case you can't fi
 
 ```xml
 <pluginRepository>
-	<id>sonatype-public-repository</id>
-	<url>https://oss.sonatype.org/content/groups/public</url>
-	<snapshots>
-		<enabled>true</enabled>
-	</snapshots>
-	<releases>
-		<enabled>true</enabled>
-	</releases>
+  <id>sonatype-public-repository</id>
+  <url>https://oss.sonatype.org/content/groups/public</url>
+  <snapshots>
+    <enabled>true</enabled>
+  </snapshots>
+  <releases>
+    <enabled>true</enabled>
+  </releases>
 </pluginRepository>
 ````
 
@@ -51,7 +51,7 @@ Can be an alternative to [maven-dependency-plugin:get](http://maven.apache.org/p
 
 
 ```
-mvn com.googlecode.maven-download-plugin:download-maven-plugin:1.7.0:artifact -DgroupId=com.googlecode -DartifactId=maven-download-plugin -Dversion=0.1 -DoutputDirectory=temp
+mvn com.googlecode.maven-download-plugin:download-maven-plugin:1.7.1:artifact -DgroupId=com.googlecode -DartifactId=maven-download-plugin -Dversion=0.1 -DoutputDirectory=temp
 ```
 
 ### "WGet" goal
@@ -59,26 +59,30 @@ This is meant to provide the necessary tooling for downloading anything in your 
 It provides caching and checksum verification.
 ```xml
 <plugin>
-	<groupId>com.googlecode.maven-download-plugin</groupId>
-	<artifactId>download-maven-plugin</artifactId>
-	<version>1.7.0</version>
-	<executions>
-		<execution>
-			<id>install-jbpm</id>
-			<phase>pre-integration-test</phase>
-			<goals>
-				<goal>wget</goal>
-			</goals>
-		</execution>
-	</executions>
-	<configuration>
-		<url>http://downloads.sourceforge.net/project/jbpm/jBPM%203/jbpm-3.1.4/jbpm-3.1.4.zip</url>
-		<unpack>true</unpack>
-		<outputDirectory>${project.build.directory}/jbpm-3.1.4</outputDirectory>
-		<md5>df65b5642f33676313ebe4d5b69a3fff</md5>
-	</configuration>
+  <groupId>com.googlecode.maven-download-plugin</groupId>
+  <artifactId>download-maven-plugin</artifactId>
+  <version>1.7.1</version>
+  <executions>
+    <execution>
+      <id>install-jbpm</id>
+      <phase>pre-integration-test</phase>
+      <goals>
+        <goal>wget</goal>
+      </goals>
+    </execution>
+  </executions>
+  <configuration>
+    <url>http://downloads.sourceforge.net/project/jbpm/jBPM%203/jbpm-3.1.4/jbpm-3.1.4.zip</url>
+    <unpack>true</unpack>
+    <outputDirectory>${project.build.directory}/jbpm-3.1.4</outputDirectory>
+    <md5>df65b5642f33676313ebe4d5b69a3fff</md5>
+  </configuration>
 </plugin>
 ```
+
+You can also run it without a pom.xml i.e.
+
+`mvn -Ddownload.url=https://example.com -Ddownload.outputDirectory=. -Ddownload.outputFileName=example.html com.googlecode.maven-download-plugin:download-maven-plugin:1.7.2:wget`
 
 ## Requirements
 
@@ -111,7 +115,7 @@ mvn com.googlecode.maven-download-plugin:download-maven-plugin:help -Ddetail
 ```
 ### Generated documentation
 
-See also generated documentation pages [for 1.7.0](http://maven-download-plugin.github.io/maven-download-plugin/docsite/1.7.0/) and [for snapshot](http://maven-download-plugin.github.io/maven-download-plugin/docsite/snapshot/).
+See also generated documentation pages [for 1.7.1](http://maven-download-plugin.github.io/maven-download-plugin/docsite/1.7.1/) and [for snapshot](http://maven-download-plugin.github.io/maven-download-plugin/docsite/snapshot/).
 
 ### Mailing-list
 
