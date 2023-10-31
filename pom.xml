@@ -24,7 +24,7 @@
   <parent>
     <groupId>org.infrastructurebuilder</groupId>
     <artifactId>ibparent</artifactId>
-    <version>90</version>
+    <version>92</version>
   </parent>
 
   <!-- Build description -->
@@ -151,6 +151,7 @@
     <dependency>
       <groupId>org.apache.httpcomponents</groupId>
       <artifactId>httpclient-cache</artifactId>
+      <version>${httpclient.version}</version> <!-- TODO Remove versions after ibparent-93 -->
     </dependency>
     <dependency>
       <groupId>org.codehaus.plexus</groupId>
